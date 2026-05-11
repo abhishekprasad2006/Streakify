@@ -1,21 +1,12 @@
-# Streakify API 🔥
+# Streakify API 
 
-A habit tracking REST API built with **FastAPI** and **PostgreSQL** as part of the Litmus7 Microservices Internship Assignment.
+A habit tracking REST API built with **FastAPI** and **PostgreSQL**.
 
 > "Help people build life-changing habits through streak psychology, smart tracking, and productivity insights."
 
 ---
 
-## 👨‍💻 Built By
-- **Name:** Abhishek Prasad
-- **GitHub:** [abhishekprasad2006](https://github.com/abhishekprasad2006)
-- **Role:** Backend Intern
-- **Company:** Litmus7
-- **Date:** April 2026
-
----
-
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -29,7 +20,7 @@ A habit tracking REST API built with **FastAPI** and **PostgreSQL** as part of t
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Streakify/
@@ -63,7 +54,7 @@ Streakify/
 
 ---
 
-## ⚙️ Setup Steps
+##  Setup Steps
 
 ### 1. Clone the repository
 ```bash
@@ -106,7 +97,7 @@ Visit: http://127.0.0.1:8000/docs
 
 ---
 
-## 🗄️ Database Design
+##  Database Design
 
 ### Users Table
 | Column | Type | Constraints |
@@ -138,7 +129,7 @@ Visit: http://127.0.0.1:8000/docs
 
 ---
 
-## 🔗 API Endpoints
+##  API Endpoints
 
 ### Users
 | Method | URL | Description | Status Code |
@@ -169,7 +160,7 @@ Visit: http://127.0.0.1:8000/docs
 
 ---
 
-## 📝 Sample Requests & Responses
+##  Sample Requests & Responses
 
 ### Create User
 **Request:**
@@ -265,7 +256,7 @@ POST /habits/1/logs
 
 ---
 
-## ✅ Business Rules
+##  Business Rules
 
 - Cannot log the same habit twice on the same day
 - Cannot log future dates
@@ -277,7 +268,7 @@ POST /habits/1/logs
 
 ---
 
-## 🔥 Streak Calculation Logic
+##  Streak Calculation Logic
 
 **Current Streak** — counts consecutive days from today backwards:
 - Start from today
@@ -290,21 +281,10 @@ POST /habits/1/logs
 - Walk through checking if each day follows the previous
 - Track the longest consecutive run found
 
-**Example:**
-
-| Date | Completed |
-|------|-----------|
-| Apr 20 | ✅ |
-| Apr 21 | ✅ |
-| Apr 22 | ❌ skipped |
-| Apr 23 | ✅ |
-
-- Current streak = 1
-- Longest streak = 2
 
 ---
 
-## ❌ Error Responses
+##  Error Responses
 
 | Status Code | Meaning | Example |
 |-------------|---------|---------|
@@ -314,7 +294,7 @@ POST /habits/1/logs
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Postman Request
@@ -329,6 +309,10 @@ Postman Request
 ```
 
 ---
+##  Built By
+- **Name:** Abhishek Prasad
+- **GitHub:** [abhishekprasad2006](https://github.com/abhishekprasad2006)
+- **Date:** April 2026
 
 ## 📦 Repository
 [https://github.com/abhishekprasad2006/streakify](https://github.com/abhishekprasad2006/streakify)
