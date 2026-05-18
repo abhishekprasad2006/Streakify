@@ -2,7 +2,6 @@ from datetime import date, timedelta
 
 
 def calculate_streak(logs):
-    # Only keep completed logs and sort newest first
     completed_dates = sorted(
         [log.log_date for log in logs if log.completed],
         reverse=True
@@ -11,10 +10,7 @@ def calculate_streak(logs):
     if not completed_dates:
         return 0, 0
 
-    # ── Current Streak ──────────────────────────────────
-    # Start from today and walk backwards day by day
-    # If the log exists for that day, count it
-    # Stop as soon as a day is missing
+    # Current Streak
     current_streak = 0
     check_date = date.today()
 
@@ -25,8 +21,7 @@ def calculate_streak(logs):
         else:
             break
 
-    # ── Longest Streak ───────────────────────────────────
-    # Sort oldest to newest and find the longest consecutive run
+    # Longest Streak
     sorted_asc = sorted(completed_dates)
     longest_streak = 1
     temp_streak = 1
@@ -41,14 +36,25 @@ def calculate_streak(logs):
     return current_streak, longest_streak
 
 
-def calculate_consistency_score(logs, habit_created_at):
-    # How many days since habit was created
+def calculate_consistency_score(logs, habit_created_at, target_days_per_week):
+    # Total days since habit was created
     total_days = (date.today() - habit_created_at.date()).days + 1
-    completed_count = sum(1 for log in logs if log.completed)
 
-    if total_days <= 0:
+    # How many days were expected based on target
+    # e.g. target 5 days/week = 5/7 chance each day
+    expected_completions = round((target_days_per_week / 7) * total_days)
+
+    # How many were actually completed
+    # Count only unique dates to avoid duplicates inflating score
+    completed_dates = set(
+        log.log_date for log in logs if log.completed
+    )
+    completed_count = len(completed_dates)
+
+    if expected_completions <= 0:
         return 0
 
-    score = round((completed_count / total_days) * 100)
-    # Cap at 100 just in case
+    score = round((completed_count / expected_completions) * 100)
+
+    # Cap at 100
     return min(score, 100)

@@ -36,7 +36,7 @@ def get_dashboard(db: Session, user_id: int):
         current_streak, longest_streak = calculate_streak(logs)
 
         # Calculate consistency score for this habit
-        consistency = calculate_consistency_score(logs, habit.created_at)
+        consistency = calculate_consistency_score(logs, habit.created_at, habit.target_days_per_week)
 
         current_streaks.append({
             "habitName": habit.name,
