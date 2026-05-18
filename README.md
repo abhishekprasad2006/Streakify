@@ -314,5 +314,5 @@ Postman Request
 - **GitHub:** [abhishekprasad2006](https://github.com/abhishekprasad2006)
 - **Date:** April 2026
 
-## 📦 Repository
+##  Repository
 [https://github.com/abhishekprasad2006/streakify](https://github.com/abhishekprasad2006/streakify)
