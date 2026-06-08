@@ -171,6 +171,9 @@ POST /users
     "email": "abhishek@test.com"
 }
 ```
+<img width="1566" height="935" alt="Create user  201 response" src="https://github.com/user-attachments/assets/00405729-c161-47fe-af59-9f18ba6c3bef" />
+
+
 **Response:**
 ```json
 {
@@ -192,6 +195,9 @@ POST /habits
     "user_id": 1
 }
 ```
+<img width="1570" height="949" alt="Create user" src="https://github.com/user-attachments/assets/bf92ed42-9b12-4b24-be98-3d03b8c18f4a" />
+
+
 **Response:**
 ```json
 {
@@ -213,6 +219,8 @@ POST /habits/1/logs
     "completed": true
 }
 ```
+<img width="1575" height="950" alt="habit loging 1" src="https://github.com/user-attachments/assets/76a2b8e6-60f5-4229-908a-7ade16e4178d" />
+
 **Response:**
 ```json
 {
@@ -234,6 +242,8 @@ POST /habits/1/logs
     "longest_streak": 7
 }
 ```
+<img width="1563" height="952" alt="Get all habit" src="https://github.com/user-attachments/assets/679ce529-86dd-4ba3-b373-f67e64575f49" />
+
 
 ### Get Dashboard
 **Response:**
