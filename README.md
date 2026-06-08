@@ -178,25 +178,26 @@ POST /users
 
 ### Create Habit
 
-
+```
 <img width="1570" height="949" alt="Create user" src="https://github.com/user-attachments/assets/bf92ed42-9b12-4b24-be98-3d03b8c18f4a" />
 
-
+```
 
 
 ### Log a Habit
-
+```
 <img width="1575" height="950" alt="habit loging 1" src="https://github.com/user-attachments/assets/76a2b8e6-60f5-4229-908a-7ade16e4178d" />
 
-
+```
 
 ### Get Streak
-
+```
 <img width="1540" height="926" alt="image" src="https://github.com/user-attachments/assets/0f364fc0-9364-419a-b908-47255f19049a" />
-
+```
 ### Get Dashboard
+```
 <img width="1576" height="993" alt="Habit daashboard" src="https://github.com/user-attachments/assets/1d611109-0e14-4d2e-b1c9-63facd328d00" />
-
+```
 
 ##  Business Rules
 
