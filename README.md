@@ -176,7 +176,7 @@ POST /users
 
 ```
 
-### Create Habit
+Create Habit
 
 ```
 <img width="1570" height="949" alt="Create user" src="https://github.com/user-attachments/assets/bf92ed42-9b12-4b24-be98-3d03b8c18f4a" />
@@ -184,7 +184,7 @@ POST /users
 ```
 
 
-### Log a Habit
+ Log a Habit
 ```
 <img width="1575" height="950" alt="habit loging 1" src="https://github.com/user-attachments/assets/76a2b8e6-60f5-4229-908a-7ade16e4178d" />
 
