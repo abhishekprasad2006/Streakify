@@ -174,97 +174,29 @@ POST /users
 <img width="1566" height="935" alt="Create user  201 response" src="https://github.com/user-attachments/assets/00405729-c161-47fe-af59-9f18ba6c3bef" />
 
 
-**Response:**
-```json
-{
-    "id": 1,
-    "name": "Abhishek",
-    "email": "abhishek@test.com",
-    "created_at": "2026-04-28T12:00:00",
-    "total_habits": 0
-}
 ```
 
 ### Create Habit
-**Request:**
-```json
-POST /habits
-{
-    "name": "Morning Workout",
-    "target_days_per_week": 5,
-    "user_id": 1
-}
-```
+
+
 <img width="1570" height="949" alt="Create user" src="https://github.com/user-attachments/assets/bf92ed42-9b12-4b24-be98-3d03b8c18f4a" />
 
 
-**Response:**
-```json
-{
-    "id": 1,
-    "name": "Morning Workout",
-    "target_days_per_week": 5,
-    "user_id": 1,
-    "is_active": true,
-    "created_at": "2026-04-28T12:00:00"
-}
-```
+
 
 ### Log a Habit
-**Request:**
-```json
-POST /habits/1/logs
-{
-    "log_date": "2026-04-28",
-    "completed": true
-}
-```
+
 <img width="1575" height="950" alt="habit loging 1" src="https://github.com/user-attachments/assets/76a2b8e6-60f5-4229-908a-7ade16e4178d" />
 
-**Response:**
-```json
-{
-    "id": 1,
-    "habit_id": 1,
-    "log_date": "2026-04-28",
-    "completed": true,
-    "created_at": "2026-04-28T12:00:00"
-}
-```
+
 
 ### Get Streak
-**Response:**
-```json
-{
-    "habit_id": 1,
-    "habit_name": "Morning Workout",
-    "current_streak": 3,
-    "longest_streak": 7
-}
-```
-<img width="1563" height="952" alt="Get all habit" src="https://github.com/user-attachments/assets/679ce529-86dd-4ba3-b373-f67e64575f49" />
 
+<img width="1540" height="926" alt="image" src="https://github.com/user-attachments/assets/0f364fc0-9364-419a-b908-47255f19049a" />
 
 ### Get Dashboard
-**Response:**
-```json
-{
-    "totalHabits": 2,
-    "activeHabits": 2,
-    "completedToday": 1,
-    "currentStreaks": [
-        {
-            "habitName": "Morning Workout",
-            "currentStreak": 3,
-            "longestStreak": 7,
-            "consistencyScore": 85
-        }
-    ],
-    "consistencyScore": 85
-}
-```
+<img width="1576" height="993" alt="Habit daashboard" src="https://github.com/user-attachments/assets/1d611109-0e14-4d2e-b1c9-63facd328d00" />
 
----
 
 ##  Business Rules
 
